@@ -2,14 +2,14 @@ services:
 
     coqui-tts:
         image: ghcr.io/coqui-ai/tts-cpu
-        container_name: coqui-tts 
+        container_name: coqui-tts
         ports:
             - "5002:5002"
         restart: unless-stopped
         stdin_open: true
         tty: true
         entrypoint:
-            - /bin/bash 
+            - /bin/bash
 #        command: -c "python3 TTS/server/server.py --model_name tts_models/en/vctk/vits"           # Voz inglés
 #        command: -c "python3 TTS/server/server.py --model_name tts_models/es/css10/vits"          # Voz español hombre
         command: -c "python3 TTS/server/server.py --model_name tts_models/es/mai/tacotron2-DDC"   # Voz español mujer
