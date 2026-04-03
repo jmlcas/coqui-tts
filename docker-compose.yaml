@@ -10,7 +10,7 @@ services:
         volumes:
             - ./tts_models:/root/.local/share/tts
             - ./voice_samples:/voice_samples
-            - ./output:/output            
+            - ./output:/output       
         restart: unless-stopped
         entrypoint:
             - /bin/bash
