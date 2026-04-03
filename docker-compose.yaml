@@ -17,4 +17,5 @@ services:
 #        command: -c "python3 TTS/server/server.py --model_name tts_models/en/vctk/vits"           # Voz inglés
 #        command: -c "python3 TTS/server/server.py --model_name tts_models/es/css10/vits"          # Voz español hombre
         command: -c "python3 TTS/server/server.py --model_name tts_models/es/mai/tacotron2-DDC"   # Voz español mujer
+#        command: -c "python3 TTS/server/server.py --model_name tts_models/multilingual/multi-dataset/your_tts"
      
